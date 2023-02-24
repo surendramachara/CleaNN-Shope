@@ -6,69 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 <style>
-    body {
-      margin:0px
-    }
-    * {
-        box-sizing: border-box;
-    }
-* {
-     font-family: Futura, Arial;
-     font-style: normal;
-}
-    #nav {
-        width:100%;
-        display: grid;
-        grid-template-columns: 5% 5% 35% 35% 10%;
-        gap:2%;
-         padding:20px 5%;
-         align-items: center;
-         border:1px solid red;
-    }
+    body { margin:0px }
+    * {  box-sizing: border-box; }
+    * {  font-family: Futura, Arial;  font-style: normal; }
 
-    #nav > div:nth-child(1) > img {
-     width:20px
-    }
-    #nav > div:nth-child(3)  {
-        text-align: center;
-    }
-    #nav > div:nth-child(3) > img {
-  
-      width: 100px;
-       align-items: center;
-      
-    }
-    #nav > div:nth-child(4) > div {
-        display: flex;
-         width:100%;
-         height:40px;
-        justify-content: space-between;
-        background-color: #EBEDF3
-    }
-    #nav > div:nth-child(4) > div >  input {
-        background-color: #EBEDF3;
-        border:none;
-    }
-    #nav > div:nth-child(4) > div >  img {
+    #nav {width:100%;height: 70px; padding:0px 5% 0px 5%;  box-sizing: border-box; display: grid; grid-template-columns:15% 55% 30% ;gap:20px;}
+#firstDiv {display: grid; grid-template-columns: repeat(2,1fr); font-size: 25px; align-items: center; text-align: center;}
+#secondDiv > div {text-align: center; }
+#secondDiv > div > a {text-decoration: none;}
+#threeDiv { display: grid; grid-template-columns: repeat(2,1fr); font-size: 25px; align-items: center; text-align: center; position: sticky; top:0px;}
+#threeDiv > :nth-child(1) {display: grid; grid-template-columns: repeat(2,1fr); font-size: 25px;border:1px solid black; padding:5px;}
+#threeDiv > :nth-child(1) > :nth-child(1) {border:none}
+#threeDiv > :nth-child(1) > :nth-child(2) {font-size: 15px;}
+#span-1 {color:red;}
    
-        background-color: #EBEDF3;
-        
-    }
-    #nav > div > img {
-        width:30px
-    }
-    #cantenar {
-        background-color: #EBEDF3;
-        position: sticky;
-        top:0px;
-    }
-   #cantenar > div  {
-    width:70%;
-    margin:auto;
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-   }
+    #cantenar {  background-color: #EBEDF3;  position: sticky;  top:0px;}
+
+   #cantenar > div  { width:70%; margin:auto;display: grid; grid-template-columns: repeat(7,1fr);  }
    #cantenar > div  > p {
     text-align: center;
     color:rgb(55, 55, 55);
@@ -173,20 +129,43 @@
    
 </style>
 <body>
-       <div id="nav">
-              <div> <img src="images/gps icon.png" alt=""> </div>
-              <div> <img src="images/account icon.png" alt=""></div>
-              <div> <img src="images/logo without back-ground.png" alt=""></div>
-              <div>
-                <div>
-                    <input type="search" placeholder="search" >
-                    <img src="images/search icon.jfif" alt="">
-                </div>
-                
-                </div>
-                  
-              <div> <img src="images/bag icon.png" alt=""></div>
-       </div>
+
+
+    <div id="nav">
+        <div id="firstDiv">
+
+            <div>
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+            </div>
+            <div>
+                <a href=""> <i class="fa-solid fa-user"></i></a>
+            </div>
+         
+            
+        </div>
+        <div id="secondDiv">
+            <div>
+                <a href="">  <h1>CLEANN <span id="span-1">SHOPE</span> </h1> </a>
+            </div>
+           
+        </div>
+        <div id="threeDiv">
+             <div>
+                <input type="text" name="" placeholder="Search" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+             </div>
+             <div>
+                <a href=""> <i class="fa-solid fa-cart-shopping"></i></a>
+             </div>
+        </div>
+        
+        
+      
+    </div>
+
+
+
+
     <!-- catagry bar  -->
 
 <div id="cantenar">
