@@ -1,0 +1,144 @@
+body { margin:0px }
+* {  box-sizing: border-box; }
+* {  font-family: Futura, Arial;  font-style: normal; }
+
+#nav {width:100%;height: 70px; padding:0px 5% 0px 5%;  box-sizing: border-box; display: grid; grid-template-columns:15% 55% 30% ;gap:20px;}
+#firstDiv {display: grid; grid-template-columns: repeat(2,1fr); font-size: 25px; align-items: center; text-align: center;}
+#firstDiv > :nth-child(3) {display: none;}
+#secondDiv > div {text-align: center; }
+#secondDiv > div > a {text-decoration: none;}
+#threeDiv { display: grid; grid-template-columns: repeat(2,1fr); font-size: 25px; align-items: center; text-align: center; position: sticky; top:0px; }
+#threeDiv > :nth-child(1) {display: grid; grid-template-columns: repeat(2,1fr); font-size: 25px;border:1px solid black; padding:5px;}
+#threeDiv > :nth-child(1) > :nth-child(1) {border:none}
+#threeDiv > :nth-child(1) > :nth-child(2) {font-size: 15px;}
+#span-1 {color:red;}
+
+#cantenar {  background-color: #EBEDF3;  position: sticky;  top:0px;}
+#cantenar > div  { width:70%; margin:auto;display: grid; grid-template-columns: repeat(7,1fr);  }
+#cantenar > div  > p {text-align: center; color:rgb(55, 55, 55); font-size: 13px; font-family: Futura, Arial;font-weight: 600px;line-height: 18px; }
+
+#videoPlay { height: 712px; border: 1px solid blue;  box-sizing: border-box;}
+#videoPlay > video {   width:100%  }
+
+#videoText { width: 50%;  margin: -45%  auto;text-align: center;}
+#videoText > :nth-child(1) { color:white; font-size: 55px; font-family: Futura, Arial; line-height: 30px; font-weight: 500px; }
+#videoText > :nth-child(2) {color:white; font-size: 34px; font-weight: 500px;line-height: 34px; font-family: Futura, Arial;}
+#videoText > :nth-child(4) {color:rgb(255, 208, 0); font-size: 30px; line-height: 30px; font-weight: 600px; font-family: Futura, Arial;}
+#videoText > div            {display: grid; grid-template-columns: repeat(2,1fr); gap:20px;}
+#videoText > div > button {color:rgb(0, 31, 73); background-color: white;  font-size: 14px; font-weight: 400px; line-height: 18px; font-family: Futura, Arial; border: none; padding:15px 35px; cursor: pointer;}
+
+.buttons :hover {background-color: darkslateblue;cursor: pointer;}
+#new_henley_weave {position: relative;}
+#new_henley_weave > img {width:100% ; }
+#allText {width:100%; margin: auto; position: absolute; left: 5%; }
+
+/* image functionality  */
+#new_henley_weave > div { width:50%;  top:0px; position: absolute;}
+#new_henley_weave > div > :nth-child(1) {color: rgb(206, 180, 92); font-size: 40px; font-weight: 600; line-height: 20px; margin-bottom: 0px; }
+#new_henley_weave > div >   :nth-child(2)  {color:white; font-size: 40px; font-weight: 400; line-height: 44px; padding: 0px 25% 0px 0px; box-sizing: border-box; margin-top: 25px; margin-bottom: 0px; }
+#new_henley_weave > div >   :nth-child(3) {color:white;font-size: 16px; font-weight: 400; line-height: 22px; box-sizing: border-box;}
+#new_henley_weave > div >   :nth-child(4) {color:white;font-size: 16px; font-weight: 400; line-height: 22px; box-sizing: border-box; padding-right: 250px; margin-top: 10px;}
+#new_henley_weave > div >   :nth-child(5) {display: grid; grid-template-columns: repeat(3,1fr); width: 30%;}
+#new_henley_weave > div >   :nth-child(6) {background-color: white; color:rgb(94, 94, 94); padding:15px 20px; border:none; font-size: 14px; line-height: 18px; margin-top: 20px;} 
+
+
+
+
+
+
+
+
+
+/* foter functionality */
+
+#foter > :nth-child(1) {display: grid; grid-template-columns: repeat(2,1fr); gap:10px; padding:20px 20%; background-color: #EBEDF3; margin:20px 0px; font-size: 14px; font-family: Futura, Arial;}
+#foter > :nth-child(1) > :nth-child(2) {display: grid; grid-template-columns: 90% 10%; border:1px solid black}
+#foter > :nth-child(1) > :nth-child(2) > input {border:none;}
+#foter > :nth-child(1) > :nth-child(2) > button {border:none; background-color:black; color:white;}
+#foter > :nth-child(2) { font-family:  Futura, Arial; width:80%; margin:auto; text-align: center;  }
+#foter > :nth-child(2) > table > thead> tr > th {text-align: start;  line-height: 24px;}
+#foter > :nth-child(2) > table > tbody > tr > td { font-size: 12px; font-family:  Futura, Arial; color:rgb(94, 94, 94); line-height: 20px;   text-align: start;  padding:2px 80px 2px 0px }
+
+#social_accoun_images {display: grid; grid-template-columns: repeat(3,1fr)}
+#social_accoun_images > i {font-size: 20px;}
+#foter_three {width:30%; margin:auto; text-align: center;}
+#foter_three > p {font-family: Futura; font-size: 14px; font-weight: 400; line-height: 30px; color:rgb(0, 31, 73)}
+#foter_three > p > i {margin-right: 10px;}
+#foter_three > div { width:100%; display: grid; grid-template-columns: repeat(5,1fr); }
+.payment_method {width:100% ;height: 40px;}
+#foter_fourth {text-align: center;}
+#foter_five {width: 80%; margin:auto; display: flex; justify-content: space-between;}
+.compaly_years {font-family:  Futura, Arial; font-size: 12px; font-weight: 400; line-height: 18px; color: rgb(94, 94, 94)}
+.company_name {font-family: Futura, Arial; font-size: 14px; font-weight: 400; line-height: 18px; color:rgb(0, 31, 73)}
+
+/* media functionlity */
+/* medium screen */
+@media screen and (min-width:750px) and (max-width:1150px) {
+#nav {width:100%;height: 70px; padding:0px 5% 0px 5%;  box-sizing: border-box; display: grid; grid-template-columns:10% 50% 40% ;gap:20px;}
+#firstDiv >:nth-child(3)  {font-size: 25px; display: block;}  
+#firstDiv > :nth-child(1) {display: none;} 
+#firstDiv > :nth-child(2) {display: none;} 
+#cantenar {display: none;}
+
+#videoText > :nth-child(1) {font-size: 40px; line-height: 20px;}
+#videoText > :nth-child(2) {font-size: 24px; line-height: 24px;}
+#videoText > :nth-child(4) {font-size: 20px; line-height: 20px;}
+#videoText > div {display: grid; grid-template-columns: repeat(1,1fr);}
+#videoText > div > button {line-height: 10px;}
+#new_henley_weave > div { width:50%; margin:-550px 0px 0px 5%;box-sizing: border-box; }
+
+#foter > :nth-child(1) {display: grid; grid-template-columns: repeat(1,1fr);}
+#foter > :nth-child(2) > table > thead> tr > th {text-align: start;  padding: 5px 50px;}
+#foter > :nth-child(2) > table > tbody > tr > td { font-size: 12px; font-family:  Futura, Arial; color:rgb(94, 94, 94); line-height: 18px;  padding: 5px 0px; text-align: start;  padding:2px 50px;}
+
+}
+
+/* small screen */
+@media screen and (min-width:500px) and (max-width:749px) {
+#nav {width:100%;height: 70px; padding:0px 2% 0px 2%;  box-sizing: border-box; display: grid; grid-template-columns:10% 40% 40% ;}
+#threeDiv { display: grid; grid-template-columns: repeat(2,1fr); gap:0% 8%; font-size: 25px; align-items: center; text-align: center; box-sizing: border-box; }
+#firstDiv >:nth-child(3)  {font-size: 25px; display: block;}  
+#firstDiv > :nth-child(1) {display: none;}
+#firstDiv > :nth-child(2) {display: none;} 
+#cantenar {display: none;}
+#secondDiv > div {text-align: center;  font-size: 10px; text-align: center;margin-top:27px;}
+
+#videoText {margin: -50%  auto;}
+#videoText > :nth-child(1) {font-size: 25px; line-height: 15px;}
+#videoText > :nth-child(2) {font-size: 18px; line-height: 20px;}
+#videoText > :nth-child(4) {font-size: 15px; line-height: 15px;}
+#videoText > div {display: grid; grid-template-columns: repeat(1,1fr);}
+#videoText > div > button {line-height: 10px;}
+
+
+
+#foter > :nth-child(1) {display: grid; grid-template-columns: repeat(1,1fr);}
+#foter > :nth-child(2) > table > thead> tr > th {text-align: start;  padding: 5px 0px;}
+#foter > :nth-child(2) > table > tbody > tr > td { font-size: 12px; font-family:  Futura, Arial; color:rgb(94, 94, 94); line-height: 18px;  padding: 5px 0px; text-align: start;  padding:2px 40px 2px 0px}
+#foter_five {width: 80%; margin:auto; display: grid; grid-template-columns: repeat(1,1fr); text-align: center;}
+
+}
+/* mobile screen */
+@media screen and (min-width:200px) and (max-width:499px) {
+#nav {width:100%; margin:auto; box-sizing: border-box;  display: grid; grid-template-columns:10% 40% 30%;}
+#firstDiv >:nth-child(3)  {font-size: 15px; display: block;}  
+#firstDiv > :nth-child(1) {display: none;}
+#firstDiv > :nth-child(2) {display: none;} 
+#cantenar {display: none;}
+#secondDiv > div {text-align: start; font-size: 5px; margin-top:27px; }
+#threeDiv { display: grid; grid-template-columns: repeat(2,1fr);  align-items: center; gap:0% 8%; font-size: 25px;  text-align: center; box-sizing: border-box;}
+#threeDiv > :nth-child(1) {display: grid; grid-template-columns: repeat(2,1fr);  border:1px solid black; }
+#threeDiv > :nth-child(1) > i {font-size: 1px;}
+#threeDiv > :nth-child(1) > input {font-size: 15%;}
+#videoText {margin: -50%  auto; box-sizing: border-box;}
+#videoText > :nth-child(1) {font-size: 15px; line-height: 15px;}
+#videoText > :nth-child(2) {font-size: 10px; line-height: 20px;}
+#videoText > :nth-child(4) {font-size: 10px; line-height: 15px;}
+#videoText > div {display: grid; grid-template-columns: repeat(1,1fr);}
+#videoText > div > button {line-height: 0px;  padding:15px 35px; margin:0px; font-size: 5px;}
+#foter > :nth-child(1) {display: grid; grid-template-columns: repeat(1,1fr);}
+#foter > :nth-child(2) > table > thead> tr > th {text-align: start;  padding: 5px 0px;}
+#foter > :nth-child(2) > table > tbody > tr > td { font-size: 8px; font-family:  Futura, Arial; color:rgb(94, 94, 94); line-height: 18px;  padding: 5px 0px; text-align: start;  padding:2px 0px 2px 0px}
+#foter_five {width: 80%; margin:auto; display: grid; grid-template-columns: repeat(1,1fr); text-align: center;}
+
+}

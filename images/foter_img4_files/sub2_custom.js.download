@@ -1,0 +1,21 @@
+
+
+__SUB2.DigDataToSend = function (  ) {
+	try {
+		var sub2dg=[{
+			"mobj": "window.dataLayer[8][2]",
+			"getV": "Page_Category",
+			"type": "cat",
+			"exception" : [["elementExists",".pdp-main__details"]],
+			"drep": {
+				"fr": "\-",
+				"to": "^"
+			}
+		}];	
+							
+		return SUB2_Digital.fetchData(sub2dg);
+		
+	} catch(e) { SUB2.clog( 'DigDataToSend: ' + e.message ); }
+	
+	return '';
+}
