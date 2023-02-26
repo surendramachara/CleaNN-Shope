@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-<link rel="stylesheet" href="sign_up.css">
+<link rel="stylesheet" href="accountCreating.css">
 <body>
     <div id="nav">
         <div id="firstDiv">
@@ -42,7 +40,6 @@
         </div>
 
     </div>
-
     <div id="cantenar">
         <div>
             <p>SHIRTS   |</p>
@@ -55,39 +52,88 @@
         </div>
     </div>
 
-     <div id="heading">
-        <h1 >My account</h1>
-     </div>
-     <div id="sign_in_and_sign_up">
-        <form id="sigin_page" >
-      
-            <label class="sign_lable" > Email address</label>
-            <br>
-            <input id="email" type="email"  class="sign_input" placeholder="Email" value="" >
-            <br>
-            <label   class="sign_lable"  >Password</label>
-            <br>
-            <input id="password" type="password"  class="sign_input" placeholder="Password" value=""  >
-            <br>
-            <a href="" class="forgetpassword">Forgotten your password?</a>
-            <br>
-            <button class="loginbtn"  >LOG IN</button>
-            </form>
 
-            <div  id="signup_page" > 
-                <div>
-                    <h3>New customers</h3>
-                    <p>Set up an account with us and you will be able to:</p>
-                    <p class="textdata">  <i  class="fa-solid fa-clipboard"></i> Check order status </p>
-                    <p> <i  class="fa-solid fa-envelope"></i> Save multiple addresses to your address book </p>
-                    <p> <i  class="fa-solid fa-key"></i>  Set your size and monogramming preferences </p> 
-                    <button class="sign_upBtn"><a href="accountCreating.html">CREATE AN ACCOUNT NOW</a></button>
-                </div>
-              
-            </div> 
-     </div>
-    
- <div id="foter">
+<h1 id="createaccount"> Create Account</h1>
+ <div id="sign_up_page">
+<form id="sign_up_form">
+    <label class="sign_up_lable" >Title</label>
+    <br>
+    <select id="sign_up_select">
+        <option value="CHOOSE A TITEL">CHOOSE A TITLE</option>
+       <option value="MR">MR</option>
+       <option value="MRS">MRS</option>
+       <option value="MS">MS</option>
+       <option value="MISS">MISS</option>
+       <option value="DOCTOR">DOCTOR</option>
+       <option value="OTHER">OTHER</option>
+    </select>
+    <br>
+    <label class="sign_up_lable">First Name</label>
+    <br>
+    <input type="text" class="sign_up_input">
+    <br>
+    <label  class="sign_up_lable">Last Name</label>
+    <br>
+    <input type="text" class="sign_up_input">
+    <br>
+
+    <label  class="sign_up_lable">Email Address</label>
+    <br>
+    <input id="emailinput" type="email" class="sign_up_input" value="">
+    <br>
+
+    <label   class="sign_up_lable">Password</label>
+    <br>
+    <label  class="sign_up_lable_text">Your password should be at least 8 characters in length, and contain at least 1 number and 1 letter.</label>
+    <br>
+    <input id="passwordinput" type="password" class="sign_up_input" value="">
+    <br>
+    <input type="checkbox" class="sign_up_checkbox" >
+    <label class="sign_up_lable_text" >Show</label>
+    <br>
+
+    <label  class="sign_up_lable">Phone</label>
+    <br>
+    <label class="sign_up_lable_text">We'll only use this to contact you about your order or to send you SMS about your delivery</label>
+    <br>
+    <input type="number" class="sign_up_input">
+    <br>
+    <input type="checkbox" class="sign_up_checkbox">
+    <label class="sign_up_checkbox_text"  >Emails about offers and our exciting new ranges.</label>
+    <br>
+    <input type="checkbox" class="sign_up_checkbox">
+    <label class="sign_up_checkbox_text" >If you'd prefer not to receive mail from selected companies, please check this box.</label>
+
+    <p id="termsAndconditions">By creating an account with Charles Tyrwhitt, you confirm that you have read and accept our <a href="https://www.charlestyrwhitt.com/on/demandware.store/Sites-CTShirts-US-Site/en_US/Account-Login/C920399746">Terms and Conditions </a> and <a href="https://www.charlestyrwhitt.com/on/demandware.store/Sites-CTShirts-US-Site/en_US/Account-Login/C927969879">See privacy policy</a></p>
+
+    <button id="sign_up_button">CREATE AN ACCOUNT</button>
+
+</form>
+
+<div id="haveAacocunt">
+    <div>
+          <div> <img src="images/sign_up_img1.svg" alt=""></div>
+          <div> 
+            <h3>6 MONTHS GUARANTEE</h3>
+            <p>Exchange or return your purchase up to 6 months after receipt</p>
+          </div>
+    </div>
+    <div>
+        <div><img src="images/sign_up_img2.svg" alt=""></div>
+        <div>
+            <h3>100% SECURE</h3>
+            <p>Shopping is secure with Charles Tyrwhitt</p>
+        </div>
+    </div>
+
+    <h1>HAVE AN ACCOUNT?</h1>
+
+    <button id="log_in_button"> <a href="sign_up.html">CLICK HERE TO LOG IN </a> </button>
+</div>
+
+</div>
+ <!-- foter functionality start -->
+  <div id="foter">
     <div>
         <p>We will keep you posted on new products and great offers</p>
         <div>
@@ -206,7 +252,10 @@
         <p class="company_name" >CHANGE COUNTRY ›</p>
         </div>
     </div>
- </div>
+ </div> -->
+ <!-- end of foter functionality -->
+
+
 </body>
 </html>
-<script src="sign_up.js" ></script>
+<script src="accountCreating.js"></script>
